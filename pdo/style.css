@@ -58,45 +58,65 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 } */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url('https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=704&q=80'); /* Replace 'your-image-url.jpg' with your own image URL */
+			background-size: cover;
+			background-position: center;
+		}
+		
+		nav {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between; /* Add this property to create space for logout button */
+			align-items: center;
+			height: 50px;
+			padding: 0 20px; /* Add this property to increase the padding on both sides */
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		
+		nav li {
+			margin: 0 10px;
+		}
+		
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+		
+		nav a:hover {
+			background-color: #fff;
+			color: #333;
+		}
 
-nav {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-}
+		/* Add CSS for logout button */
+		.logout-btn {
+			background-color: #d30808;
+			color: #333;
+			padding: 10px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+			cursor: pointer;
+            margin-left: 650px;
+		}
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+		.logout-btn:hover {
+			background-color: #ffffff;
+			color: #d81616;
+		}
 
-nav li {
-    margin: 0 10px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #fff;
-    color: #333;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 50px;
-}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
